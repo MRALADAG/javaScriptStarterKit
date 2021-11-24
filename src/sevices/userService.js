@@ -1,5 +1,4 @@
 import { users } from "../data/users.js"
-import { CustomerCheckValidityForErrorsService, EmployeeCheckValidityForErrorsService } from "./userCheckValidityForErrorsService.js"
 import UserAddModel from "../models/userAddModel.js"
 
 export default class UserService {
@@ -9,8 +8,6 @@ export default class UserService {
         this.customers = []
         this.errors = []
         this.loggerService = loggerService
-        this.checkCustomerValidityForErrors = new CustomerCheckValidityForErrorsService();
-        this.checkEmployeeValidityForErrors = new EmployeeCheckValidityForErrorsService();
     }
 
 

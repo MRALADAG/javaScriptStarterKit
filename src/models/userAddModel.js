@@ -1,4 +1,5 @@
-import { CustomerCheckValidityForErrorsService, EmployeeCheckValidityForErrorsService } from "../services/userCheckValidityForErrorsService.js";
+import CustomerCheckValidityForErrorsService from "../sevices/customerCheckValidityForErrorsService.js"
+import EmployeeCheckValidityForErrorsService from "../sevices/employeeCheckValidityForErrorsService.js"
 import DataError from "./dataError.js";
 
 export default class UserAddModel {
