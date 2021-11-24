@@ -2,7 +2,8 @@
 console.log("merhaba kodlama.io");
 
 // console.log(dolarDun);
-// Burada dolarDun undefined dır çünkü bu değişken deklere edilmemiştir.
+// Burada dolarDun undefined dır çünkü bu değişken sadece deklere edilmemiştir.
+// initialize edilmemiştir.
 
 // var dolarDun = 9.20
 // var dolarBugun = 9.30
@@ -15,7 +16,7 @@ console.log("merhaba kodlama.io");
 let dolarDun = 9.20
 let dolarBugun = 9.30
 
-// var anahtar kelimesi bütün scoplarda global birdeğişken gibi çalışıyor.
+// var anahtar kelimesi bütün scope'larda global bir değişken gibi çalışıyor.
 // const anahtar kelimesi final gibi değişkeni sabitliyor. Yani sonradan ezemiyoruz.
 // const euroDun = 11.2
 // euroDun = 10
