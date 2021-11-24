@@ -1,5 +1,4 @@
 import { users } from "../data/users.js"
-import DataError from "../models/dataError.js"
 import { CustomerCheckValidityForErrorsService, EmployeeCheckValidityForErrorsService } from "./userCheckValidityForErrorsService.js"
 import UserAddModel from "../models/userAddModel.js"
 
