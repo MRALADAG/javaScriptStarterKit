@@ -1,4 +1,4 @@
-import { BaseLogger, ElasticLogger, MongoLogger } from "../crossCuttingConcerns/logger.js";
+import MongoLogger from "../crossCuttingConcerns/logging/mongoLogger.js";
 import Customer from "../models/customer.js";
 import UserService from "../sevices/userService.js";
 
