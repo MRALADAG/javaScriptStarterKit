@@ -1,5 +1,7 @@
 import MongoLogger from "../crossCuttingConcerns/logging/mongoLogger.js";
 import Customer from "../models/customer.js";
+import CustomerService from "../sevices/customerService.js";
+import EmployeeService from "../sevices/employeeService.js";
 import UserService from "../sevices/userService.js";
 
 
@@ -30,12 +32,25 @@ console.log("***********************************************");
 
 userService.load();
 
-// let customerToAdd = new Customer(1, 'Seda', 'Yılmaz', 'Ankara', 'ftyf');
-// customerToAdd.type = "customer";
+let customerToAdd = new Customer(1, 'Seda', 'Yılmaz', 'Ankara', 'ftyf');
+let customerToAdd2 = new Customer(8, 'Ahmet', 'Demir', 'Ankara', 'dfghtgh');
+customerToAdd.type = "customer";
 // userService.add(customerToAdd);
 
 console.log(userService.customers);
 console.log(userService.employees);
 console.log(userService.errors);
 
-console.log(userService.getCustomersSorted());
+// console.log(userService.getCustomersSorted());
+
+let customerService = new CustomerService(logger1);
+let employeeService = new EmployeeService(logger1);
+
+customerToAdd2.type = 'customer';
+
+console.log(employeeService.load());
+customerService.add(customerToAdd2);
+console.log(customerService.errors);
+console.log(customerService.load());
+
+console.log(employeeService.getEmployeesSorted());
